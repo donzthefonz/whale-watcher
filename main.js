@@ -8,6 +8,8 @@ const bot_id = config.bot_token;
 infura_http = new ethers.providers.JsonRpcProvider(config.infura_mainnet_http, "homestead");
 const tg_bot = new tgBot(bot_id, {polling: true});
 
+tg_bot.sendMessage(channel_id, "BOT STARTING");
+
 function parseList() {
   const csv = require('csv-parser');
   const fs = require('fs');
@@ -34,6 +36,7 @@ async function parseBlock(block_with_transactions,address_list) {
         try {
             let whale_wallet = ethers.utils.getAddress(whale['Wallet'])
             if (whale_wallet == address) {
+                console.log("Found a whale TX!: " + address);
                 whale['tx'] = tx['hash'];
                 caught_whales.push(whale);
             }

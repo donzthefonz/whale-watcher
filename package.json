@@ -1,0 +1,24 @@
+{
+  "name": "whale-watcher",
+  "version": "1.0.0",
+  "description": "Telegram Bot for tracking certain wallet transactions on the etheruem blockchian, can be used with other EVM compatible blockchains.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donzthefonz/whale-watcher.git"
+  },
+  "author": "Adam Alexander Don",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donzthefonz/whale-watcher/issues"
+  },
+  "homepage": "https://github.com/donzthefonz/whale-watcher#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "ethers": "^5.6.4",
+    "node-telegram-bot-api": "^0.56.0"
+  }
+}
