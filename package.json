@@ -18,10 +18,12 @@
   "homepage": "https://github.com/donzthefonz/whale-watcher#readme",
   "dependencies": {
     "csv-parser": "^3.0.0",
+    "debank-open-api": "^1.0.1",
     "ethers": "^5.6.4",
     "jssoup": "^0.0.15",
     "node-telegram-bot-api": "^0.56.0",
     "puppeteer": "^13.6.0",
-    "puppeteer-extra-plugin-stealth": "^2.9.0"
+    "puppeteer-extra-plugin-stealth": "^2.9.0",
+    "random-useragent": "^0.5.0"
   }
 }
